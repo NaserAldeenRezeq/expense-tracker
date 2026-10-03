@@ -6,6 +6,8 @@ A small web app to record daily expenses. You can add, edit, delete and filter e
 
 You need Node.js, PostgreSQL (with pgAdmin) and VS Code with the Live Server extension.
 
+**Repository:** [github.com/NaserAldeenRezeq/expense-tracker](https://github.com/NaserAldeenRezeq/expense-tracker)
+
 **Backend**
 
 1. Open pgAdmin and create an empty database named `expense_tracker`.
@@ -62,7 +64,6 @@ You need Node.js, PostgreSQL (with pgAdmin) and VS Code with the Live Server ext
 The hardest part was connecting the pieces together. At first the browser blocked my requests with a CORS error, and even after installing the `cors` package it still failed, because I had put `app.use(cors())` after the routes. I learned that Express reads the code from top to bottom, so middleware must come before the routes. I also got stuck when the server could not connect to the database because of a "password authentication failed" error: I was using the pgAdmin master password instead of the `postgres` user password. Reading the exact error message in the terminal helped me find the real cause each time.
 
 
-## Video link
+## Demo video
 
-
-https://drive.google.com/file/d/11eb4tYlshoiT-QaFUoP2tzvCPKsQyPIZ/view?usp=sharing
+[Watch the demo on Google Drive](https://drive.google.com/file/d/11eb4tYlshoiT-QaFUoP2tzvCPKsQyPIZ/view?usp=sharing)
